@@ -16,14 +16,14 @@ FBSMiscUtilitiesBean utility=new FBSMiscUtilitiesBean();
 String degree=utility.noNull(request.getParameter("degree"));
 String ay=utility.noNull(request.getParameter("ay"));
 
-ArrayList sems=new ArrayList(Arrays.asList(request.getParameterValues("sem")));
+String sem=utility.noNull(request.getParameter("sem"));
 String ldate1=utility.noNull(request.getParameter("ldate1"));
 String ldate2=utility.noNull(request.getParameter("ldate2"));
 String ldate3=utility.noNull(request.getParameter("ldate3"));
 
 session.setAttribute("degree", degree);
 
-session.setAttribute("sems", sems);
+session.setAttribute("sem", sem);
 
 session.setAttribute("ay", ay);
 session.setAttribute("ldate1", ldate1);

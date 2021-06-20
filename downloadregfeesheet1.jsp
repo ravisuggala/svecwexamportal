@@ -45,18 +45,20 @@ else if(ur.getStatus().equals("ACE"))
 							
 							
 						  	<TR>
-								<TD  WIDTH="20%" ALIGN="right">Semester:</TD>
-								<TD  WIDTH="10%" align="left" nowrap>
-									<input type=checkbox value='I-I' name=sem>&nbsp;&nbsp;I-I</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='I-II' name=sem>&nbsp;&nbsp;I-II</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='II-I' name=sem>&nbsp;&nbsp;II-I</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='II-II' name=sem>&nbsp;&nbsp;II-II</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='III-I' name=sem>&nbsp;&nbsp;III-I</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='III-II' name=sem>&nbsp;&nbsp;III-II</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='IV-I' name=sem>&nbsp;&nbsp;IV-I</input>&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type=checkbox value='IV-II' name=sem>&nbsp;&nbsp;IV-II</input>&nbsp;&nbsp;&nbsp;&nbsp;
-								</TD>
-							</TR>
+								<TD  WIDTH="10%" ALIGN="right">Semester: </TD>
+								<TD  WIDTH="10%" align="left">
+								<select name="sem">
+								<option></option>
+									<option value="I-I">I YEAR - I SEM</option> 
+        							<option value="I-II">I YEAR - II SEM</option>
+        							 <option value="II-I">II YEAR - I SEM</option> 
+        							 <option value="II-II">II YEAR - II SEM</option> 
+        							<option value="III-I">III YEAR - I SEM</option>
+        							<option value="III-II">III YEAR - II SEM</option>
+        							<option value="IV-I">IV YEAR - I SEM</option>
+        							<option value="IV-II">IV YEAR - II SEM</option>
+        							</select></TD></TR>
+        					
 							<TR>
 								<TD  WIDTH="20%" ALIGN="right" nowrap>Academic Year:<br>(yyyy-yyyy)</br> </TD>
 								<td WIDTH="10%" ALIGN="left"><input maxlength="10" name="ay"></td>
